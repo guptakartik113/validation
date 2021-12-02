@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Form.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Form validation</title>
+  </head>
+  <body>
+    <div class="flex_parent">
+      <div class="flex_child">
+        <div class="form_heading">
+          <h2>Create Application Form</h2>
+          <p style="margin-top: 5px">In 3 Simple Steps</p>
+        </div>
+
+        <div class="container">
+          <form
+            name="myform"
+            action="/Welcome.html"
+            onsubmit="return validateForm()"
+          >
+            <label for="fname"
+              ><p>First Name <span id="name_id"></span></p>
+            </label>
+            <input
+              type="text"
+              id="fname"
+              name="name"
+              placeholder="Your name.."
+            />
+            <label for="country"
+              ><p>Country <span id="country_id"></span></p
+            ></label>
+            <select id="country" name="country">
+              <option value=""></option>
+              <option value="australia"><p>Australia</p></option>
+              <option value="canada"><p>Canada</p></option>
+              <option value="usa"><p>USA</p></option>
+            </select>
+
+            <label for="phone"
+              ><p>Phone no. <span id="phone_id"></span></p
+            ></label>
+            <input
+              type="text"
+              id="phone"
+              name="number"
+              placeholder="Your Phone no ..."
+            />
+
+            <input
+              type="submit"
+              value="Submit"
+              style="margin-top: 30px"
+              onclick="myFunction()"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="Form.js"></script>
+  </body>
+</html>
